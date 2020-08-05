@@ -8,6 +8,7 @@
     "dist"
   ],
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rollup --config ./config/rollup.config.js",
     "lint": "node_modules/eslint/bin/eslint.js src --ext .js,.ts,.jsx,.tsx",

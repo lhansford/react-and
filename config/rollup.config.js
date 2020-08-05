@@ -17,14 +17,10 @@ export default {
     }
   ],
   plugins: [
-    resolve({ extensions, preferBuiltins: true }),
+    resolve({ extensions }),
     commonjs(),
     typescript({ emitDeclarationOnly: true }),
-    babel({
-      exclude: 'node_modules/**',
-      include: ['src/**/*'],
-      extensions,
-    }),
+    babel({ exclude: 'node_modules/**', extensions }),
   ],
   external: ['react', 'react-dom'],
 };
