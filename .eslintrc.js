@@ -5,4 +5,5 @@ module.exports = {
     'plugin:jest-dom/recommended',
   ],
   plugins: ['jest-formatting', 'jest-dom'],
+  ignorePatterns: ['./config/*.js'],
 };
