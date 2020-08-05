@@ -2,7 +2,10 @@
 
 ![CI](https://github.com/lhansford/react-and/workflows/CI/badge.svg)
 
-TODO:
+A lightweight React component for joining multiple components in a grammatically correct way. Joins
+components using commas, "and", "&", "or", or any other term you specify.
+
+Written in Typscript with zero dependencies.
 
 ## Installation
 
