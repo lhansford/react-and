@@ -1,0 +1,34 @@
+name: Publish Storybook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-to-surge:
+    name: Publish Storybook to react-and.surge.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: Build
+        run: yarn build-storybook -c .storybook
+
+      - name: Deploy to react-and.surge.sh
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'react-and.surge.sh'
+          project: './storybook-static'
+          login: ${{ secrets.SURGE_LOGIN }}
+          token: ${{ secrets.SURGE_TOKEN }}

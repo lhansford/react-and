@@ -1,5 +1,7 @@
 # react-and
 
+![CI](https://github.com/lhansford/react-and/workflows/CI/badge.svg)
+
 TODO:
 
 ## Installation
@@ -42,7 +44,7 @@ Renders as:
 
 ### `conjuction`
 
-This is the string to be used to join the last child when there is more than one child. Defaults to `"and"`.
+This is the string to be used to join the last child when there is more than one child. Default: `"and"`.
 
 ```JSX
 <ReactAnd conjuction="and/or">
@@ -58,7 +60,7 @@ Renders as:
 
 ### `oxfordComma`
 
-Determinses whether an [Oxford comma](https://en.wikipedia.org/wiki/Serial_comma) will be used when joining the items. Defaults to `true`.
+Determinses whether an [Oxford comma](https://en.wikipedia.org/wiki/Serial_comma) will be used when joining the items. Default: `true`.
 
 ```JSX
 <ReactAnd oxfordComma={false}>
@@ -75,7 +77,7 @@ Renders as:
 
 ## Demo
 
-TODO:
+[https://react-and.surge.sh/](https://react-and.surge.sh/)
 
 ## License
 
