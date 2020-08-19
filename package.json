@@ -1,7 +1,17 @@
 {
   "name": "react-and",
-  "version": "1.0.0-rc.1",
-  "description": "An opinionated template for React components using Typescript",
+  "version": "1.0.0",
+  "description": "A lightweight React component for joining multiple components in a grammatically correct way.",
+  "keywords": [
+    "react",
+    "grammar",
+    "conjunctions"
+  ],
+  "homepage": "https://github.com/lhansford/react-and",
+  "bugs": {
+    "url": "https://github.com/lhansford/react-and/issues",
+    "email": "mail@lukehansford.me"
+  },
   "author": "Luke Hansford",
   "license": "MIT",
   "files": [
