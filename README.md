@@ -1,6 +1,8 @@
 # react-and
 
 ![CI](https://github.com/lhansford/react-and/workflows/CI/badge.svg)
+![npm](https://img.shields.io/npm/v/react-and?style=flat-square)
+![NPM Size](https://img.shields.io/bundlephobia/min/react-and?style=flat-square)
 
 A lightweight React component for joining multiple components in a grammatically correct way. Joins
 components using commas, "and", "&", "or", or any other term you specify.
