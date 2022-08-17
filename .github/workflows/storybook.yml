@@ -23,7 +23,7 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Build
-        run: yarn build-storybook -c .storybook
+        run: yarn build:storybook -c .storybook
 
       - name: Deploy to react-and.surge.sh
         uses: dswistowski/surge-sh-action@v1
