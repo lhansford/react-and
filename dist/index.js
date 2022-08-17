@@ -1,5 +1,5 @@
-var $iA2ta$reactjsxdevruntime = require("react/jsx-dev-runtime");
 require("react");
+var $iA2ta$reactjsxruntime = require("react/jsx-runtime");
 
 function $parcel$defineInteropFlag(a) {
   Object.defineProperty(a, '__esModule', {value: true, configurable: true});
@@ -14,17 +14,17 @@ $parcel$export(module.exports, "default", () => $9233cea927cb9637$export$2e2bcd8
 
 
 const $9233cea927cb9637$var$ReactAnd = ({ children: children , conjuction: conjuction = "and" , oxfordComma: oxfordComma = true  })=>{
-    if (!children) return /*#__PURE__*/ (0, $iA2ta$reactjsxdevruntime.jsxDEV)((0, $iA2ta$reactjsxdevruntime.Fragment), {}, void 0, false);
-    if (!Array.isArray(children) || children.length === 1) return /*#__PURE__*/ (0, $iA2ta$reactjsxdevruntime.jsxDEV)((0, $iA2ta$reactjsxdevruntime.Fragment), {
+    if (!children) return /*#__PURE__*/ (0, $iA2ta$reactjsxruntime.jsx)((0, $iA2ta$reactjsxruntime.Fragment), {});
+    if (!Array.isArray(children) || children.length === 1) return /*#__PURE__*/ (0, $iA2ta$reactjsxruntime.jsx)((0, $iA2ta$reactjsxruntime.Fragment), {
         children: children
-    }, void 0, false);
-    if (children.length === 2) return /*#__PURE__*/ (0, $iA2ta$reactjsxdevruntime.jsxDEV)((0, $iA2ta$reactjsxdevruntime.Fragment), {
+    });
+    if (children.length === 2) return /*#__PURE__*/ (0, $iA2ta$reactjsxruntime.jsx)((0, $iA2ta$reactjsxruntime.Fragment), {
         children: [
             children[children.length - 2],
             ` ${conjuction} `,
             children[children.length - 1]
         ]
-    }, void 0, false);
+    });
     const commaSeparatedItems = children.slice(0, children.length - 2).reduce((previous, current)=>{
         return [
             ...previous,
@@ -32,14 +32,14 @@ const $9233cea927cb9637$var$ReactAnd = ({ children: children , conjuction: conju
             ", "
         ];
     }, []);
-    return /*#__PURE__*/ (0, $iA2ta$reactjsxdevruntime.jsxDEV)((0, $iA2ta$reactjsxdevruntime.Fragment), {
+    return /*#__PURE__*/ (0, $iA2ta$reactjsxruntime.jsx)((0, $iA2ta$reactjsxruntime.Fragment), {
         children: [
             ...commaSeparatedItems,
             children[children.length - 2],
             oxfordComma ? `, ${conjuction} ` : ` ${conjuction} `,
             children[children.length - 1], 
         ]
-    }, void 0, false);
+    });
 };
 var $9233cea927cb9637$export$2e2bcd8739ae039 = $9233cea927cb9637$var$ReactAnd;
 
