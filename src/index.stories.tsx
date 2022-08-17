@@ -3,12 +3,6 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 import ReactAnd from './index';
 
-export default {
-  title: 'ReactAnd',
-  component: ReactAnd,
-  decorators: [withKnobs],
-};
-
 export const TextAsChildren = (): JSX.Element => (
   <ReactAnd conjuction={text('Conjuction', 'and')} oxfordComma={boolean('Use Oxford comma?', true)}>
     {['apples', 'oranges', 'bananas']}
@@ -22,3 +16,9 @@ export const ComponentsAsChildren = (): JSX.Element => (
     <a href="#bananas">bananas</a>
   </ReactAnd>
 );
+
+export default {
+  title: 'ReactAnd',
+  component: ReactAnd,
+  decorators: [withKnobs],
+};

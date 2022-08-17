@@ -30,3 +30,6 @@ combined.log
 
 # Use Yarn instead :D
 package-lock.json
+
+# Parcel
+.parcel-cache
