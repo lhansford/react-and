@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface IProps {
+type ReactAndProps = {
   children?: React.ReactNode;
   conjuction?: string;
   oxfordComma?: boolean;
 }
 
-const ReactAnd = ({ children, conjuction = 'and', oxfordComma = true }: IProps): JSX.Element => {
+const ReactAnd = ({ children, conjuction = 'and', oxfordComma = true }: ReactAndProps): JSX.Element => {
   if (!children) {
     return <></>;
   }
