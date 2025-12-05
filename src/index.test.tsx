@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { expect, describe, it } from 'vitest';
 
 import ReactAnd from './index';
 
@@ -23,7 +24,7 @@ describe('ReactAnd', () => {
       <ReactAnd oxfordComma={false}>
         {[
           <a data-testid="anchor" href="/" key="apples">
-            <span style={{ color: 'red' }}>apples</span>
+            <span style={{ color: '#FFF000' }}>apples</span>
           </a>,
           'oranges',
           'bananas',
@@ -31,7 +32,7 @@ describe('ReactAnd', () => {
       </ReactAnd>,
     );
     expect(screen.getByTestId('anchor')).toHaveAttribute('href', '/');
-    expect(screen.getByText('apples')).toHaveStyle({ color: 'red' });
+    expect(screen.getByText('apples')).toHaveStyle({ color: '#FFF000' });
     expect(screen.getByText(', oranges and bananas')).not.toBeNull();
   });
 
