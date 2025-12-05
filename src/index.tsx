@@ -1,5 +1,6 @@
 import React from 'react';
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 type ReactAndProps = {
   children?: React.ReactNode;
   conjuction?: string;
