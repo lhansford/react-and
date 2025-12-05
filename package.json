@@ -1,6 +1,6 @@
 {
   "name": "react-and",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A lightweight React component for joining multiple components in a grammatically correct way.",
   "keywords": [
     "react",
@@ -56,5 +56,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }
