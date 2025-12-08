@@ -6,12 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     # Setup .npmrc file to publish to npm
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v6
       with:
-        node-version: '12.x'
+        node-version: '24.x'
         registry-url: 'https://registry.npmjs.org'
+    - run: corepack enable
     - run: yarn install
     - run: npm publish
       env:
