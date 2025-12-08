@@ -82,7 +82,7 @@ Renders as:
 
 ## Demo
 
-[https://react-and.surge.sh/](https://react-and.surge.sh/)
+[https://lhansford.github.io/react-and/](https://lhansford.github.io/react-and/)
 
 ## License
 
