@@ -23,7 +23,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build -c ./config/vite.config.js && yarn type-check:emit",
-    "build:docs": "vite build --outDir docs",
+    "build:docs": "vite build --outDir docs --base='./'",
     "dev": "vite dev -c ./config/vite.config.js",
     "lint:fix": "yarn lint --fix",
     "lint": "node_modules/.bin/eslint ./src  --ext .js,.ts,.tsx",
