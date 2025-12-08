@@ -1,0 +1,28 @@
+name: Publish Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-to-surge:
+    name: Publish docs to react-and.surge.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: corepack enable
+      - name: Install packages
+        run: yarn
+      - name: Build
+        run: yarn build:docs
+      - name: Deploy to react-and.surge.sh
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'react-and.surge.sh'
+          project: './docs'
+          login: ${{ secrets.SURGE_LOGIN }}
+          token: ${{ secrets.SURGE_TOKEN }}

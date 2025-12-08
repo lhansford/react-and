@@ -7,7 +7,7 @@ type ReactAndProps = {
   oxfordComma?: boolean;
 }
 
-const ReactAnd = ({ children, conjuction = 'and', oxfordComma = true }: ReactAndProps): JSX.Element => {
+const ReactAnd = ({ children, conjuction = 'and', oxfordComma = true }: ReactAndProps) => {
   if (!children) {
     return <></>;
   }

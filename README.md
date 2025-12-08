@@ -65,7 +65,7 @@ Renders as:
 
 ### `oxfordComma`
 
-Determinses whether an [Oxford comma](https://en.wikipedia.org/wiki/Serial_comma) will be used when joining the items. Default: `true`.
+Determines whether an [Oxford comma](https://en.wikipedia.org/wiki/Serial_comma) will be used when joining the items. Default: `true`.
 
 ```JSX
 <ReactAnd oxfordComma={false}>
