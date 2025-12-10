@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 type ReactAndProps = {
@@ -7,7 +7,7 @@ type ReactAndProps = {
   oxfordComma?: boolean;
 }
 
-const ReactAnd = ({ children, conjuction = 'and', oxfordComma = true }: ReactAndProps) => {
+const ReactAnd = ({ children, conjuction = 'and', oxfordComma = true }: ReactAndProps): ReactNode => {
   if (!children) {
     return <></>;
   }
